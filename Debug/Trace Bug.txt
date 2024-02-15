@@ -1,0 +1,56 @@
+1. Cek branch yang bermasalah dengan
+select * from aetb_eoc_branches where branch_code = '388'
+
+2. Cek apakah debug sudah aktif apa belum
+select distinct param_val from fcc114.cstb_param where param_name ='REAL_DEBUG';
+select distinct debug from fcc114.cstb_debug_users where user_id = 'SYSTEM';
+Jika belum, minta diaktifkan bugnya
+
+3. Jika sudah, cek EOC_REF_NO nya berapa di aplikasi WinSCP (contoh : 000ZEOC172780MB3)
+di /home/oracle/FCLOG/DBDebug
+
+4. Cek apakah file 000ZEOC172780MB3 benar file debugnya, jika tidak ada errornya harus di rebuilt lagi
+(cara rebuilt adalah cek dulu TARGET STAGE di select * from aetb_eoc_branches where branch_code = '434', misal
+TARGEt STAGE POSTEOFI_3 dan RUNNING STAGE nya POSTEOTI_1, maka jalankan @eod_1_alter POSTEOFI_3 434 di putty)
+
+
+5. Jika sudah menggunakan file yg benar dan sudah di rebuild, cek lokasi error di
+select * from aetb_eoc_branches where branch_code = '388' (kolom error, contoh error :AE-BRN-03)
+
+6. Trace error di file bug (000ZEOC172780MB3), kemudian trace keatas mengikuti package yang diikuti disampingnya.
+Membuka package menggunakan UNWRAP
+(contoh : 
+Aepks_Eoc_Processor :: In Fn_Run_Batch ..:388:POSTEOTI_1:POSTEOTI_1
+Aepks_Eoc_Processor :: Going to called Wrp_Batch for :BRNRECON
+ Inside pr_brnrecon
+when NO_DATA_FOUND of pr_aeodbrnrecon
+Aepks_Eoc_Processor :: Failed in running the Batch :BRNRECON
+Aepks_Eoc_Wrapper :: Failed in Aepks_eoc_processor.Fn_Run_Batch..
+Aepks_Eoc_Wrapper :: From E_Failure_Exception of Fn_Run_Batch
+Aepks_Eoc_Wrapper :: Errors     :AE-BRN-03  
+(contoh Aepks_Eoc_Wrapper : nama package, From E_Failure_Exception of Fn_Run_Batch : errornya apa ada didalamnya)
+
+7. BACA keatas untuk errornya, karena kalau kebawah sudah pasti error
+  Untuk Aepks_Eoc_Wrapper :: Failed in Aepks_eoc_processor.Fn_Run_Batch. artinya
+Error ada didalam package Aepks_eoc_processor, buka package tersebut menggunakan UNWRAP
+
+8. Kita trace didalam package tersebut sampai menemukan bugnya dimana
+(contoh EXECUTE IMMEDIATE 'Begin wrp_batch.pr_aeod' || P_BATCH ||)
+artinya kita buka package wrp_batch (centang WRAPPED dihilangkan)di aplikasi UNWRAP
+
+9. Kita cari procedure yang tertulis di error bug tadi di package wrp_batch
+(contoh Inside pr_brnrecon , when NO_DATA_FOUND of pr_aeodbrnrecon)
+
+10. Kita cari error p_Errcode := 'AE-BRN-03 sesuai yang tertulis di error di file bugnya, kemudian kita
+analisis apa yg menyebabkan error
+(Contoh query disini 
+BEGIN
+				SELECT Eod_Run
+					INTO l_Eod_Run
+					FROM Sttb_Brn_Eodm
+				 WHERE Branch_Code = p_Branch
+					 AND Run_Date = Global.Application_Date;
+Disini errornya terjadi di Run_Date karena tidak ada Run_Date pada tgl 6 Oktober, yang sesuai dengan data di
+kolom EOD_DATE di  select * from aetb_eoc_branches where branch_code = '388', yang ada hanya data sampai 5 Oktober saja)
+
+11. Finish

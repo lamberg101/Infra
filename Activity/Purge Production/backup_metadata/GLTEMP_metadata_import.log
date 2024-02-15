@@ -1,0 +1,17 @@
+;;; 
+Import: Release 11.2.0.4.0 - Production on Tue Aug 30 23:15:23 2022
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+Master table "SYS"."SYS_IMPORT_TABLE_01" successfully loaded/unloaded
+Starting "SYS"."SYS_IMPORT_TABLE_01":  "/******** AS SYSDBA" parfile=GLTEMP_metadata_import.par 
+Processing object type TABLE_EXPORT/TABLE/TABLE
+Processing object type TABLE_EXPORT/TABLE/GRANT/OWNER_GRANT/OBJECT_GRANT
+Processing object type TABLE_EXPORT/TABLE/INDEX/INDEX
+Processing object type TABLE_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/USER_PREF_STATISTICS
+Job "SYS"."SYS_IMPORT_TABLE_01" successfully completed at Tue Aug 30 23:15:27 2022 elapsed 0 00:00:02

@@ -1,0 +1,343 @@
+<Mar 30, 2023 11:51:34 AM> <INFO> <NodeManager> <Server output log file is '/app/Oracle/Middleware/user_projects/domains/mcbfut/servers/FCUBSFUT_app01_ms1/logs/FCUBSFUT_app01_ms1.out'>
+.
+.
+JAVA Memory arguments: -Xms256m -Xmx512m
+.
+WLS Start Mode=Production
+.
+CLASSPATH=/app/Oracle/Middleware/oracle_common/modules/oracle.jdbc_11.1.1/ojdbc6dms.jar:/app/Oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/app/Oracle/Middleware/patch_ocp371/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/usr/java7_64/lib/tools.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic_sp.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/app/Oracle/Middleware/modules/features/weblogic.server.modules_10.3.6.0.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/app/Oracle/Middleware/modules/org.apache.ant_1.7.1/lib/ant-all.jar:/app/Oracle/Middleware/modules/net.sf.antcontrib_1.1.0.0_1-0b2/lib/ant-contrib.jar:/app/Oracle/Middleware/oracle_common/soa/modules/commons-cli-1.1.jar:/app/Oracle/Middleware/oracle_common/soa/modules/oracle.soa.mgmt_11.1.1/soa-infra-mgmt.jar:/app/Oracle/Middleware/oracle_common/modules/oracle.jrf_11.1.1/jrf.jar:/app/Oracle/Middleware/wlserver_10.3/common/derby/lib/derbyclient.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/xqrl.jar:/app/Oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/app/Oracle/Middleware/patch_ocp371/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/usr/java7_64/lib/tools.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic_sp.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/app/Oracle/Middleware/modules/features/weblogic.server.modules_10.3.6.0.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/app/Oracle/Middleware/modules/org.apache.ant_1.7.1/lib/ant-all.jar:/app/Oracle/Middleware/modules/net.sf.antcontrib_1.1.0.0_1-0b2/lib/ant-contrib.jar::/app/Oracle/Middleware
+.
+PATH=/app/Oracle/Middleware/wlserver_10.3/server/bin:/app/Oracle/Middleware/modules/org.apache.ant_1.7.1/bin:/usr/java7_64/jre/bin:/usr/java7_64/bin:/app/Oracle/Middleware/wlserver_10.3/server/bin:/app/Oracle/Middleware/modules/org.apache.ant_1.7.1/bin:/usr/java7_64/jre/bin:/usr/java7_64/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/usr/bin/X11:/sbin:/usr/java7_64/jre/bin:/usr/java7_64/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/oracle/bin:/usr/bin/X11:/sbin:.
+.
+***************************************************
+*  To start WebLogic Server, use a username and   *
+*  password assigned to an admin-level user.  For *
+*  server administration, use the WebLogic Server *
+*  console at http://hostname:port/console        *
+***************************************************
+starting weblogic with Java version:
+java version "1.7.0"
+Java(TM) SE Runtime Environment (build pap6470sr10fp65-20200402_01(SR10 FP65))
+IBM J9 VM (build 2.6, JRE 1.7.0 AIX ppc64-64 Compressed References 20200331_443031 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR10_20200331_0052_B443031
+JIT  - r11_20200331_443031
+GC   - R26_Java726_SR10_20200331_0052_B443031_CMPRSS
+J9CL - 20200331_443031)
+JCL - 20200326_01 based on Oracle jdk7u261-b07
+Starting WLS with line:
+/usr/java7_64/bin/java    -Xms256m -Xmx512m -Dweblogic.Name=FCUBSFUT_app01_ms1 -Djava.security.policy=/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy  -Dweblogic.ProductionModeEnabled=true -Dweblogic.system.BootIdentityFile=/app/Oracle/Middleware/user_projects/domains/mcbfut/servers/FCUBSFUT_app01_ms1/data/nodemanager/boot.properties -Dweblogic.nodemanager.ServiceEnabled=true -Dweblogic.security.SSL.ignoreHostnameVerification=false -Dweblogic.ReverseDNSAllowed=false -Xdebug -Xnoagent -Djava.compiler=none -Xrunjdwp:server=y,suspend=n,transport=dt_socket,address=8787  -da -Dplatform.home=/app/Oracle/Middleware/wlserver_10.3 -Dwls.home=/app/Oracle/Middleware/wlserver_10.3/server -Dweblogic.home=/app/Oracle/Middleware/wlserver_10.3/server  -Dcommon.components.home=/app/Oracle/Middleware/oracle_common -Djrf.version=11.1.1 -Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.Jdk14Logger -Ddomain.home=/app/Oracle/Middleware/user_projects/domains/mcbfut -Djrockit.optfile=/app/Oracle/Middleware/oracle_common/modules/oracle.jrf_11.1.1/jrocket_optfile.txt -Doracle.server.config.dir=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig/servers/FCUBSFUT_app01_ms1 -Doracle.domain.config.dir=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig  -Digf.arisidbeans.carmlloc=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig/carml  -Digf.arisidstack.home=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig/arisidprovider -Doracle.security.jps.config=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig/jps-config.xml -Doracle.deployed.app.dir=/app/Oracle/Middleware/user_projects/domains/mcbfut/servers/FCUBSFUT_app01_ms1/tmp/_WL_user -Doracle.deployed.app.ext=/- -Dweblogic.alternateTypesDirectory=/app/Oracle/Middleware/oracle_common/modules/oracle.ossoiap_11.1.1,/app/Oracle/Middleware/oracle_common/modules/oracle.oamprovider_11.1.1,/app/Oracle/Middleware/oracle_common/modules/oracle.jps_11.1.1 -Djava.protocol.handler.pkgs=oracle.mds.net.protocol  -Dweblogic.jdbc.remoteEnabled=false  -Dem.oracle.home=/app/Oracle/Middleware/oracle_common -Djava.awt.headless=true -Dweblogic.management.discover=false -Dweblogic.management.server=http://10.81.6.16:7001  -Dwlw.iterativeDev=false -Dwlw.testConsole=false -Dwlw.logErrorsToConsole=false -Dweblogic.ext.dirs=/app/Oracle/Middleware/patch_wls1036/profiles/default/sysext_manifest_classpath:/app/Oracle/Middleware/patch_ocp371/profiles/default/sysext_manifest_classpath  weblogic.Server
+Listening for transport dt_socket at address: 8787
+<Mar 30, 2023 11:51:36 AM WIB> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+<Mar 30, 2023 11:51:36 AM WIB> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+<Mar 30, 2023 11:51:36 AM WIB> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with IBM J9 VM Version 2.6 from IBM Corporation> 
+<Mar 30, 2023 11:51:40 AM WIB> <Info> <Management> <BEA-141107> <Version: WebLogic Server Temporary Patch for BUG15869805 Mon Oct 07 10:17:45 IST 2013
+WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+<Mar 30, 2023 11:51:45 AM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+<Mar 30, 2023 11:51:45 AM WIB> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+<Mar 30, 2023 11:51:45 AM WIB> <Notice> <Log Management> <BEA-170019> <The server log file /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/FCUBSFUT_app01_ms1/logs/FCUBSFUT_app01_ms1.log is opened. All server side log events will be written to this file.> 
+<Mar 30, 2023 11:51:53 AM WIB> <Notice> <Security> <BEA-090082> <Security initializing using security realm myrealm.> 
+<Mar 30, 2023 11:51:58 AM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY> 
+<Mar 30, 2023 11:51:58 AM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+<Mar 30, 2023 11:52:09 AM WIB> <Warning> <EJB> <BEA-010212> <The EJB 'FCJLogin(Application: FCC114FUT, EJBComponent: FCJSMS.jar)' contains at least one method without an explicit transaction attribute setting. The default transaction attribute of Supports will be used for the following methods: local[postValidateLogin(com.ofss.fcc.common.FCUserGlobals,java.lang.String,long), resetPassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.sql.Date,java.lang.String,java.lang.String), getUserid([B), getSessionKey(), startSession(), validateLogin([B,[B,java.lang.String)]  > 
+<Mar 30, 2023 11:52:10 AM WIB> <Warning> <EJB> <BEA-010212> <The EJB 'SFMSInMDB(Application: FCC114FUT, EJBComponent: FCJScheduler.jar)' contains at least one method without an explicit transaction attribute setting. The default transaction attribute of NotSupported will be used for the following methods: beanClass[onMessage(javax.jms.Message)]  > 
+<Mar 30, 2023 11:52:16 AM WIB> <Warning> <EJB> <BEA-012035> <The Remote interface method: 'public abstract com.ofss.elcm.dto.ge.UtilizationLogDTO com.ofss.elcm.ejb.client.utils.IAuthorizeUtilization.authorize(com.ofss.elcm.dto.ge.UtilizationLogDTO,com.ofss.elcm.common.RequestProfile,oracle.toplink.sessions.UnitOfWork,java.util.List,boolean) throws com.ofss.elcm.common.exception.ProcessException' in EJB 'AuthorizeUtilization' contains a parameter of type: 'oracle.toplink.sessions.UnitOfWork' which is not Serializable. Though the EJB 'AuthorizeUtilization' has call-by-reference set to false, this parameter is not Serializable and hence will be passed by reference. A parameter can be passed using call-by-value only if the parameter type is Serializable.> 
+<Mar 30, 2023 11:52:16 AM WIB> <Warning> <EJB> <BEA-012035> <The Remote interface method: 'public abstract com.ofss.elcm.common.dto.IdentifiableDTO com.ofss.elcm.ejb.client.replicate.IReplicateComEJB.assembleRequest(com.ofss.elcm.common.dto.IdentifiableDTO,com.ofss.elcm.replicate.entity.RefreshMaster) throws java.lang.Exception' in EJB 'ReplicateComEJB' contains a parameter of type: 'com.ofss.elcm.replicate.entity.RefreshMaster' which is not Serializable. Though the EJB 'ReplicateComEJB' has call-by-reference set to false, this parameter is not Serializable and hence will be passed by reference. A parameter can be passed using call-by-value only if the parameter type is Serializable.> 
+Mar 30, 2023 11:53:46 AM org.quartz.simpl.SimpleThreadPool initialize
+INFO: Job execution threads will use class loader of thread: [ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'
+Mar 30, 2023 11:53:46 AM org.quartz.core.SchedulerSignalerImpl <init>
+INFO: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+Mar 30, 2023 11:53:46 AM org.quartz.core.QuartzScheduler <init>
+INFO: Quartz Scheduler v.1.6.6 created.
+Mar 30, 2023 11:53:46 AM org.quartz.impl.jdbcjobstore.JobStoreSupport initialize
+INFO: Using thread monitor-based data access locking (synchronization).
+Mar 30, 2023 11:53:46 AM org.quartz.impl.jdbcjobstore.JobStoreSupport cleanVolatileTriggerAndJobs
+INFO: Removed 0 Volatile Trigger(s).
+Mar 30, 2023 11:53:46 AM org.quartz.impl.jdbcjobstore.JobStoreSupport cleanVolatileTriggerAndJobs
+INFO: Removed 0 Volatile Job(s).
+Mar 30, 2023 11:53:46 AM org.quartz.impl.jdbcjobstore.JobStoreTX initialize
+INFO: JobStoreTX initialized.
+Mar 30, 2023 11:53:46 AM org.quartz.impl.StdSchedulerFactory instantiate
+INFO: Quartz scheduler 'SchedulerFactory' initialized from an externally provided properties instance.
+Mar 30, 2023 11:53:46 AM org.quartz.impl.StdSchedulerFactory instantiate
+INFO: Quartz scheduler version: 1.6.6
+Mar 30, 2023 11:53:47 AM org.quartz.impl.jdbcjobstore.JobStoreSupport recoverJobs
+INFO: Freed 0 triggers from 'acquired' / 'blocked' state.
+Mar 30, 2023 11:53:47 AM org.quartz.impl.jdbcjobstore.JobStoreSupport recoverJobs
+INFO: Recovering 0 jobs that were in-progress at the time of the last shut-down.
+Mar 30, 2023 11:53:47 AM org.quartz.impl.jdbcjobstore.JobStoreSupport recoverJobs
+INFO: Recovery complete.
+Mar 30, 2023 11:53:47 AM org.quartz.impl.jdbcjobstore.JobStoreSupport recoverJobs
+INFO: Removed 0 'complete' triggers.
+Mar 30, 2023 11:53:47 AM org.quartz.impl.jdbcjobstore.JobStoreSupport recoverJobs
+INFO: Removed 0 stale fired job entries.
+Mar 30, 2023 11:53:47 AM org.quartz.core.QuartzScheduler start
+INFO: Scheduler SchedulerFactory_$_SchedulerFactory started.
+<Mar 30, 2023 11:54:19 AM WIB> <Notice> <Log Management> <BEA-170027> <The Server has established connection with the Domain level Diagnostic Service successfully.> 
+<Mar 30, 2023 11:54:19 AM WIB> <Notice> <Cluster> <BEA-000197> <Listening for announcements from cluster using unicast cluster messaging> 
+<Mar 30, 2023 11:54:19 AM WIB> <Notice> <Cluster> <BEA-000133> <Waiting to synchronize with other running members of FCUBSFUTCLUSTER.> 
+<Mar 30, 2023 11:54:49 AM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN> 
+<Mar 30, 2023 11:54:49 AM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING> 
+<Mar 30, 2023 11:54:49 AM WIB> <Notice> <Cluster> <BEA-000162> <Starting "async" replication service with remote cluster address "null"> 
+<Mar 30, 2023 11:54:50 AM WIB> <Notice> <Security> <BEA-090171> <Loading the identity certificate and private key stored under the alias DemoIdentity from the jks keystore file /app/Oracle/Middleware/wlserver_10.3/server/lib/DemoIdentity.jks.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /app/Oracle/Middleware/wlserver_10.3/server/lib/DemoTrust.jks.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090169> <Loading trusted certificates from the jks keystore file /usr/java7_64/jre/lib/security/cacerts.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Alert> <Security> <BEA-090152> <Demo trusted CA certificate is being used in production mode: [
+[
+  Version: V3
+  Subject: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+  Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+
+  Key:  IBMJCE RSA Public Key:
+modulus:
+9550192877869244258838480703390456015046425375252278279190673063544122510925482179963329236052146047356415957587628011282484772458983977898996276815440753
+public exponent:
+65537
+
+  Validity: [From: Fri Mar 22 03:12:27 WIB 2002,
+               To: Wed Mar 23 03:12:27 WIB 2022]
+  Issuer: CN=CACERT, OU=FOR TESTING ONLY, O=MyOrganization, L=MyTown, ST=MyState, C=US
+  SerialNumber: [69042098805081595651034369680212310004]
+
+Certificate Extensions: 1
+[1]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+]
+
+]
+  Algorithm: [MD5withRSA]
+  Signature:
+0000: 9d 26 4c 29 c8 91 c3 a7  06 c3 24 6f ae b4 f8 82  ..L........o....
+0010: 80 4d aa cb 7c 79 46 84  81 c4 66 95 f4 1e d8 c4  .M...yF...f.....
+0020: e9 b7 d9 7c e2 23 33 a4  b7 21 e0 aa 54 2b 4a ff  ......3.....T.J.
+0030: cb 21 20 88 81 21 db ac  90 54 d8 7d 79 63 23 3c  .........T..yc..
+
+] The system is vulnerable to security attacks, since it trusts certificates signed by the demo trusted CA.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=COMODO RSA Certification Authority,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.12.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Global Chambersign Root - 2008,O=AC Camerfirma S.A.,2.5.4.5=#1309413832373433323837,L=Madrid (see current address at www.camerfirma.com/address),C=EU". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Starfield Secure Certificate Authority - G2,OU=http://certs.starfieldtech.com/repository/,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Entrust Root Certification Authority - G2,OU=(c) 2009 Entrust\, Inc. - for authorized use only,OU=See www.entrust.net/legal-terms,O=Entrust\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Go Daddy Root Certificate Authority - G2,O=GoDaddy.com\, Inc.,L=Scottsdale,ST=Arizona,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=DigiCert Global Root G3,OU=www.digicert.com,O=DigiCert Inc,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.10045.4.3.3.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=DigiCert Global Root G2,OU=www.digicert.com,O=DigiCert Inc,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=thawte Primary Root CA - G3,OU=(c) 2008 thawte\, Inc. - For authorized use only,OU=Certification Services Division,O=thawte\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=thawte Primary Root CA - G2,OU=(c) 2007 thawte\, Inc. - For authorized use only,O=thawte\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.10045.4.3.3.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Chambers of Commerce Root - 2008,O=AC Camerfirma S.A.,2.5.4.5=#1309413832373433323837,L=Madrid (see current address at www.camerfirma.com/address),C=EU". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Buypass Class 3 Root CA,O=Buypass AS-983163327,C=NO". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Buypass Class 2 Root CA,O=Buypass AS-983163327,C=NO". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=T-TeleSec GlobalRoot Class 3,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=DigiCert Trusted Root G4,OU=www.digicert.com,O=DigiCert Inc,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.12.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Certum Trusted Network CA 2,OU=Certum Certification Authority,O=Unizeto Technologies S.A.,C=PL". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.13.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=T-TeleSec GlobalRoot Class 2,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=VeriSign Class 3 Public Primary Certification Authority - G4,OU=(c) 2007 VeriSign\, Inc. - For authorized use only,OU=VeriSign Trust Network,O=VeriSign\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.10045.4.3.3.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=DigiCert Assured ID Root G3,OU=www.digicert.com,O=DigiCert Inc,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.10045.4.3.3.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=DigiCert Assured ID Root G2,OU=www.digicert.com,O=DigiCert Inc,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R3". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "OU=Security Communication RootCA2,O=SECOM Trust Systems CO.\,LTD.,C=JP". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=AffirmTrust Commercial,O=AffirmTrust,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=VeriSign Universal Root Certification Authority,OU=(c) 2008 VeriSign\, Inc. - For authorized use only,OU=VeriSign Trust Network,O=VeriSign\, Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=AffirmTrust Premium ECC,O=AffirmTrust,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.10045.4.3.3.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=KEYNECTIS ROOT CA,OU=ROOT,O=KEYNECTIS,C=FR". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=QuoVadis Root CA 3 G3,O=QuoVadis Limited,C=BM". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GeoTrust Primary Certification Authority - G3,OU=(c) 2008 GeoTrust Inc. - For authorized use only,O=GeoTrust Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=GeoTrust Primary Certification Authority - G2,OU=(c) 2007 GeoTrust Inc. - For authorized use only,O=GeoTrust Inc.,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.10045.4.3.3.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=QuoVadis Root CA 2 G3,O=QuoVadis Limited,C=BM". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=QuoVadis Root CA 1 G3,O=QuoVadis Limited,C=BM". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.10045.4.3.3.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=AffirmTrust Premium,O=AffirmTrust,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.12.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=Starfield Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.11.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=USERTrust RSA Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.113549.1.1.12.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Security> <BEA-090898> <Ignoring the trusted CA certificate "CN=COMODO ECC Certification Authority,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB". The loading of the trusted certificate list raised a certificate parsing exception PKIX: Unsupported OID in the AlgorithmIdentifier object: 1.2.840.10045.4.3.3.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Server> <BEA-002613> <Channel "DefaultSecure" is now listening on 10.81.6.16:9002 for protocols iiops, t3s, CLUSTER-BROADCAST-SECURE, ldaps, https.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.81.6.16:8002 for protocols iiop, t3, CLUSTER-BROADCAST, ldap, snmp, http.> 
+<Mar 30, 2023 11:54:51 AM WIB> <Notice> <WebLogicServer> <BEA-000330> <Started WebLogic Managed Server "FCUBSFUT_app01_ms1" for domain "mcbfut" running in Production Mode> 
+<Mar 30, 2023 11:54:52 AM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING> 
+<Mar 30, 2023 11:54:52 AM WIB> <Notice> <WebLogicServer> <BEA-000360> <Server started in RUNNING mode> 
+<Mar 30, 2023 1:13:24 PM WIB> <Error> <HTTP> <BEA-101020> <[ServletContext@1820476721[app:FCC114FUT module:FCJNeoWeb path:/FCJNeoWeb spec-version:null]] Servlet failed with Exception
+java.lang.IllegalStateException: Cannot forward a response that is already committed
+	at weblogic.servlet.internal.RequestDispatcherImpl.forward(RequestDispatcherImpl.java:122)
+	at com.ofss.infra.web.LoginValidateServlet.doPost(LoginValidateServlet.java:114)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	Truncated. see log file for complete stacktrace
+> 
+<Mar 30, 2023 1:24:46 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:62,365 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 1:26:51 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:62,414 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 1:37:16 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:62,546 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 1:51:46 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:62,675 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 1:58:56 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:62,760 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 1:58:56 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:62,761 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 1:58:56 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:62,763 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 1:58:56 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:62,762 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 2:10:50 PM WIB> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "649" seconds working on the request "Workmanager: default, Version: 0, Scheduled=true, Started=true, Started time: 649930 ms
+[
+POST /FCJNeoWeb/FCClientHandler HTTP/1.1
+Accept: */*
+FUNCTIONID: AEDSTART
+OPERATION: BATCHEODSTARTASYNC
+X-CSRFTOKEN: 1EAB8A2D694EE3F3DA939E6877B8669DD0F856FF9742C98E792F92EAEFE889C9
+HASATTACHMENTS: FALSE
+Referer: http://10.81.6.16:8002/FCJNeoWeb/SMSStartLogServlet?funcid=AEDSTART&uiName=&msgType=WORKFLOW&actionType=initiate&timestamp=1680159596702&numeric=&parentArgs=&inTime=50396702&X-CSRFTOKEN=1EAB8A2D694EE3F3DA939E6877B8669DD0F856FF9742C98E792F92EAEFE889C9&txnBranch=
+Accept-Language: en-ID,en-GB;q=0.8,en-US;q=0.5,en;q=0.2
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0)
+Content-Length: 1094
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: JSESSIONID=cpC4klrWGv2qpf3wnpR2pvLl2DPSkdhD8rYX2XXyJLVprVQ9yhr5!1486587598
+
+]", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+null> 
+<Mar 30, 2023 2:11:50 PM WIB> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "709" seconds working on the request "Workmanager: default, Version: 0, Scheduled=true, Started=true, Started time: 709949 ms
+[
+POST /FCJNeoWeb/FCClientHandler HTTP/1.1
+Accept: */*
+FUNCTIONID: AEDSTART
+OPERATION: BATCHEODSTARTASYNC
+X-CSRFTOKEN: 1EAB8A2D694EE3F3DA939E6877B8669DD0F856FF9742C98E792F92EAEFE889C9
+HASATTACHMENTS: FALSE
+Referer: http://10.81.6.16:8002/FCJNeoWeb/SMSStartLogServlet?funcid=AEDSTART&uiName=&msgType=WORKFLOW&actionType=initiate&timestamp=1680159596702&numeric=&parentArgs=&inTime=50396702&X-CSRFTOKEN=1EAB8A2D694EE3F3DA939E6877B8669DD0F856FF9742C98E792F92EAEFE889C9&txnBranch=
+Accept-Language: en-ID,en-GB;q=0.8,en-US;q=0.5,en;q=0.2
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0)
+Content-Length: 1094
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: JSESSIONID=cpC4klrWGv2qpf3wnpR2pvLl2DPSkdhD8rYX2XXyJLVprVQ9yhr5!1486587598
+
+]", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+null> 
+<Mar 30, 2023 2:43:31 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,114 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 2:43:31 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,115 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 2:43:31 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,113 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 2:43:31 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,112 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 2:54:06 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,188 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 2:54:06 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,186 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 2:54:06 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,187 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:10:06 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,303 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:48:51 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,579 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:48:51 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,578 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:48:51 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,577 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:49:21 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,593 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:49:21 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,589 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:49:21 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,592 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:49:21 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,590 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:49:21 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,591 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:59:31 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,688 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:59:31 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,686 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:59:31 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,687 during the configured idle timeout of 5 secs> 
+<Mar 30, 2023 3:59:31 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:63,685 during the configured idle timeout of 5 secs> 
+EMSOutMDBBean [processMsg(Message)] 2023-03-31->null
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1018)
+	at com.ofss.fcc.jems.common.ftp.FCFtpJems.createFile(FCFtpJems.java:292)
+	at com.ofss.fcc.EMSOutMDBBean.startOutProcess(EMSOutMDBBean.java:618)
+	at com.ofss.fcc.EMSOutMDBBean.onMessage(EMSOutMDBBean.java:177)
+	at weblogic.ejb.container.internal.MDListener.execute(MDListener.java:583)
+	at weblogic.ejb.container.internal.MDListener.transactionalOnMessage(MDListener.java:486)
+	at weblogic.ejb.container.internal.MDListener.onMessage(MDListener.java:388)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:4659)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:4345)
+	at weblogic.jms.client.JMSSession.executeMessage(JMSSession.java:3821)
+	at weblogic.jms.client.JMSSession.access$000(JMSSession.java:115)
+	at weblogic.jms.client.JMSSession$UseForRunnable.run(JMSSession.java:5170)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+<Mar 31, 2023 8:34:26 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:51,558 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 9:52:31 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,145 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 9:52:31 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,147 during the configured idle timeout of 5 secs> 
+EMSOutMDBBean [processMsg(Message)] 2023-03-31->null
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1018)
+	at com.ofss.fcc.jems.common.ftp.FCFtpJems.createFile(FCFtpJems.java:292)
+	at com.ofss.fcc.EMSOutMDBBean.startOutProcess(EMSOutMDBBean.java:618)
+	at com.ofss.fcc.EMSOutMDBBean.onMessage(EMSOutMDBBean.java:177)
+	at weblogic.ejb.container.internal.MDListener.execute(MDListener.java:583)
+	at weblogic.ejb.container.internal.MDListener.transactionalOnMessage(MDListener.java:486)
+	at weblogic.ejb.container.internal.MDListener.onMessage(MDListener.java:388)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:4659)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:4345)
+	at weblogic.jms.client.JMSSession.executeMessage(JMSSession.java:3821)
+	at weblogic.jms.client.JMSSession.access$000(JMSSession.java:115)
+	at weblogic.jms.client.JMSSession$UseForRunnable.run(JMSSession.java:5170)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+<Mar 31, 2023 9:59:56 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,219 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 10:03:26 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.81.21.32:58,278 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 10:08:06 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,299 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 10:32:16 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,526 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 10:32:16 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,525 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 10:32:16 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,521 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 10:32:16 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,522 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 10:32:16 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,524 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 10:49:11 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,628 during the configured idle timeout of 5 secs> 
+EMSOutMDBBean [processMsg(Message)] 2023-03-31->null
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1018)
+	at com.ofss.fcc.jems.common.ftp.FCFtpJems.createFile(FCFtpJems.java:292)
+	at com.ofss.fcc.EMSOutMDBBean.startOutProcess(EMSOutMDBBean.java:618)
+	at com.ofss.fcc.EMSOutMDBBean.onMessage(EMSOutMDBBean.java:177)
+	at weblogic.ejb.container.internal.MDListener.execute(MDListener.java:583)
+	at weblogic.ejb.container.internal.MDListener.transactionalOnMessage(MDListener.java:486)
+	at weblogic.ejb.container.internal.MDListener.onMessage(MDListener.java:388)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:4659)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:4345)
+	at weblogic.jms.client.JMSSession.executeMessage(JMSSession.java:3821)
+	at weblogic.jms.client.JMSSession.access$000(JMSSession.java:115)
+	at weblogic.jms.client.JMSSession$UseForRunnable.run(JMSSession.java:5170)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+EMSOutMDBBean [processMsg(Message)] 2023-03-31->null
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1018)
+	at com.ofss.fcc.jems.common.ftp.FCFtpJems.createFile(FCFtpJems.java:292)
+	at com.ofss.fcc.EMSOutMDBBean.startOutProcess(EMSOutMDBBean.java:618)
+	at com.ofss.fcc.EMSOutMDBBean.onMessage(EMSOutMDBBean.java:177)
+	at weblogic.ejb.container.internal.MDListener.execute(MDListener.java:583)
+	at weblogic.ejb.container.internal.MDListener.transactionalOnMessage(MDListener.java:486)
+	at weblogic.ejb.container.internal.MDListener.onMessage(MDListener.java:388)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:4659)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:4345)
+	at weblogic.jms.client.JMSSession.executeMessage(JMSSession.java:3821)
+	at weblogic.jms.client.JMSSession.access$000(JMSSession.java:115)
+	at weblogic.jms.client.JMSSession$UseForRunnable.run(JMSSession.java:5170)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+<Mar 31, 2023 11:14:51 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,922 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 11:14:51 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,923 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 11:14:51 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,921 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 11:14:51 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,920 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 11:16:01 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,931 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 11:16:01 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,929 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 11:16:01 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,930 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 11:16:01 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:52,932 during the configured idle timeout of 5 secs> 
+EMSOutMDBBean [processMsg(Message)] 2023-03-31->null
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1018)
+	at com.ofss.fcc.jems.common.ftp.FCFtpJems.createFile(FCFtpJems.java:292)
+	at com.ofss.fcc.EMSOutMDBBean.startOutProcess(EMSOutMDBBean.java:618)
+	at com.ofss.fcc.EMSOutMDBBean.onMessage(EMSOutMDBBean.java:177)
+	at weblogic.ejb.container.internal.MDListener.execute(MDListener.java:583)
+	at weblogic.ejb.container.internal.MDListener.transactionalOnMessage(MDListener.java:486)
+	at weblogic.ejb.container.internal.MDListener.onMessage(MDListener.java:388)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:4659)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:4345)
+	at weblogic.jms.client.JMSSession.executeMessage(JMSSession.java:3821)
+	at weblogic.jms.client.JMSSession.access$000(JMSSession.java:115)
+	at weblogic.jms.client.JMSSession$UseForRunnable.run(JMSSession.java:5170)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:545)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+<Mar 31, 2023 2:04:46 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:55,025 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 2:04:46 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:55,024 during the configured idle timeout of 5 secs> 
+<Mar 31, 2023 2:11:01 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.177:55,122 during the configured idle timeout of 5 secs> 

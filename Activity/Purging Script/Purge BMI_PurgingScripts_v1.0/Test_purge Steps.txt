@@ -1,0 +1,21 @@
+1. Healthcek database
+- Make sure no locking session
+- Make sure FRA is under threshold
+
+2. Check size database and tables before
+- Check size database
+- Check size ASM
+- Check size table and tablespace
+
+
+3. Run the bellow query (using Putty???)
+@00_query_purge_tables.sql
+@01_DDL_INSERT_CSTB_PARAM_PURGDTLS_BMI.INC.sql
+@02_AETB_EOC_PROGRAMS_HIST_TMP.DDL
+@03_FBTB_OVD_ARCH.DDL
+@04_FBTB_TXNLOG_DETAILS_HIST_TMP.DDL
+@05_GIPKS_ARCHIVE_CUSTOM.spc
+@06_GIPKS_ARCHIVE_CUSTOM.sql
+@07_query_purge_tables.sql
+
+

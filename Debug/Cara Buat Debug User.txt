@@ -1,0 +1,3 @@
+
+select distinct debug from fcc114.cstb_debug_users where user_id = 'SIGIT1';
+insert into fcc114.cstb_debug_users (module, debug, user_id) select module, debug, 'SIGIT1' from fcc114.cstb_debug_users where user_id = 'MORRIS1';

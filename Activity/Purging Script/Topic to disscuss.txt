@@ -1,0 +1,17 @@
+
+1. BMI Purging actvity
+- Is there changes should be made prior to test this script?
+- Where to run this? Putty or using plsql
+- When can the testing be done?
+
+
+The last time was done in October 2021, Is there any doc concerning this?
+
+
+
+2. BMI scheduled purging
+- Is there changes should be made prior to test this script?
+- Where to run this? Putty or using plsql
+- When can the testing be done?
+
+

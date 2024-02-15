@@ -1,0 +1,198 @@
+
+SQL*Plus: Release 11.2.0.4.0 Production on Tue Oct 4 16:50:32 2022
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+
+
+  COUNT(1)
+----------
+     21675
+
+Elapsed: 00:00:00.50
+
+OWNER			       OBJECT_NAME		      OBJECT_TYPE	  LAST_DDL_TI
+------------------------------ ------------------------------ ------------------- -----------
+FCC114			       DEPKS_DEDONLRV_KERNEL	      PACKAGE BODY	  30-AUG-2022
+FCC114			       GWPKS_PURGEBRANCH	      PACKAGE BODY	  30-AUG-2022
+
+Elapsed: 00:00:00.49
+Tue Oct  4 16:50:33 WIT 2022
+
+mcbdb01prd
+
+
+Table truncated.
+
+Elapsed: 00:00:00.44
+
+Table truncated.
+
+Elapsed: 00:00:00.13
+
+Table truncated.
+
+Elapsed: 00:00:00.16
+
+Table truncated.
+
+Elapsed: 00:00:00.19
+
+Table truncated.
+
+Elapsed: 00:00:00.14
+
+Table truncated.
+
+Elapsed: 00:00:00.14
+
+Table truncated.
+
+Elapsed: 00:00:00.83
+
+Table truncated.
+
+Elapsed: 00:00:00.19
+
+Table truncated.
+
+Elapsed: 00:00:00.15
+
+Table truncated.
+
+Elapsed: 00:00:00.11
+
+Table truncated.
+
+Elapsed: 00:00:00.10
+
+Table truncated.
+
+Elapsed: 00:00:00.12
+
+Table truncated.
+
+Elapsed: 00:00:00.22
+
+Table truncated.
+
+Elapsed: 00:00:00.18
+
+Table truncated.
+
+Elapsed: 00:00:00.88
+
+Table truncated.
+
+Elapsed: 00:00:00.18
+
+Table truncated.
+
+Elapsed: 00:00:00.15
+
+Table truncated.
+
+Elapsed: 00:00:00.17
+
+Table truncated.
+
+Elapsed: 00:00:00.14
+
+Table truncated.
+
+Elapsed: 00:00:00.19
+
+Table truncated.
+
+Elapsed: 00:00:00.51
+
+Table truncated.
+
+Elapsed: 00:00:00.50
+
+Table truncated.
+
+Elapsed: 00:00:00.17
+
+Table truncated.
+
+Elapsed: 00:00:00.16
+
+Table truncated.
+
+Elapsed: 00:00:00.25
+
+Table truncated.
+
+Elapsed: 00:00:00.18
+
+Table truncated.
+
+Elapsed: 00:00:00.17
+
+Table truncated.
+
+Elapsed: 00:00:00.98
+
+Table truncated.
+
+Elapsed: 00:00:00.13
+
+Table truncated.
+
+Elapsed: 00:00:00.15
+
+Table truncated.
+
+Elapsed: 00:00:00.56
+
+Table truncated.
+
+Elapsed: 00:00:00.24
+
+Table truncated.
+
+Elapsed: 00:00:00.19
+
+Table truncated.
+
+Elapsed: 00:00:00.17
+
+Table truncated.
+
+Elapsed: 00:00:01.12
+
+Table truncated.
+
+Elapsed: 00:00:00.17
+
+Table truncated.
+
+Elapsed: 00:00:00.44
+
+Table truncated.
+
+Elapsed: 00:00:01.14
+
+  COUNT(1)
+----------
+     21675
+
+Elapsed: 00:00:00.48
+
+OWNER			       OBJECT_NAME		      OBJECT_TYPE	  LAST_DDL_TI
+------------------------------ ------------------------------ ------------------- -----------
+FCC114			       DEPKS_DEDONLRV_KERNEL	      PACKAGE BODY	  30-AUG-2022
+FCC114			       GWPKS_PURGEBRANCH	      PACKAGE BODY	  30-AUG-2022
+
+Elapsed: 00:00:00.71
+Tue Oct  4 16:50:46 WIT 2022
+
+mcbdb01prd
+
+16:50:46 SQL> 

@@ -1,0 +1,376 @@
+
+SQL*Plus: Release 11.2.0.4.0 Production on Tue Aug 30 20:09:47 2022
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+
+
+Session altered.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.34
+
+Table dropped.
+
+Elapsed: 00:00:00.11
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.07
+
+Table dropped.
+
+Elapsed: 00:00:00.05
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.04
+
+Table dropped.
+
+Elapsed: 00:00:00.04
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.04
+
+Table dropped.
+
+Elapsed: 00:00:00.04
+
+Table dropped.
+
+Elapsed: 00:00:00.07
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.21
+
+Table dropped.
+
+Elapsed: 00:00:00.22
+
+Table dropped.
+
+Elapsed: 00:00:00.07
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.10
+
+Table dropped.
+
+Elapsed: 00:00:00.05
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.56
+
+Table dropped.
+
+Elapsed: 00:00:00.29
+
+Table dropped.
+
+Elapsed: 00:00:00.17
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.25
+
+Table dropped.
+
+Elapsed: 00:00:00.30
+
+Table dropped.
+
+Elapsed: 00:00:00.30
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.05
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.23
+
+Table dropped.
+
+Elapsed: 00:00:00.27
+
+Table dropped.
+
+Elapsed: 00:00:00.07
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.05
+
+Table dropped.
+
+Elapsed: 00:00:00.24
+
+Table dropped.
+
+Elapsed: 00:00:00.16
+
+Table dropped.
+
+Elapsed: 00:00:00.10
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.04
+
+Table dropped.
+
+Elapsed: 00:00:00.17
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.10
+
+Table dropped.
+
+Elapsed: 00:00:00.10
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.04
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.10
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.03
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.19
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.05
+
+Table dropped.
+
+Elapsed: 00:00:00.07
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+
+Table dropped.
+
+Elapsed: 00:00:00.26
+
+Table dropped.
+
+Elapsed: 00:00:00.05
+
+Table dropped.
+
+Elapsed: 00:00:00.11
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.16
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.15
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.15
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.15
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.21
+
+Table dropped.
+
+Elapsed: 00:00:00.21
+
+Table dropped.
+
+Elapsed: 00:00:01.08
+
+Table dropped.
+
+Elapsed: 00:00:00.23
+
+Table dropped.
+
+Elapsed: 00:00:00.06
+20:09:59 SQL> 

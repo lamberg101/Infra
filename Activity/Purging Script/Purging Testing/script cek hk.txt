@@ -1,0 +1,104 @@
+select * from SWTB_TXN_LOG where rownum < 10 and purge_date is not null;
+
+select count(purge_date) from fcc114.SWTB_TXN_LOG where rownum < 10 and purge_date is not null;
+
+select * from ACTB_HISTORY where rownum < 10;
+
+
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TRN_REF_NO                                         VARCHAR2(16)
+ EVENT_SR_NO                                        NUMBER
+ EVENT                                              VARCHAR2(4)
+ AC_BRANCH                                          VARCHAR2(3)
+ AC_NO                                              VARCHAR2(20)
+ AC_CCY                                             VARCHAR2(3)
+ DRCR_IND                                           CHAR(1)
+ TRN_CODE                                           VARCHAR2(3)
+ AMOUNT_TAG                                         VARCHAR2(35)
+ FCY_AMOUNT                                         NUMBER(22,3)
+ EXCH_RATE                                          NUMBER(24,12)
+ LCY_AMOUNT                                         NUMBER(22,3)
+ RELATED_CUSTOMER                                   VARCHAR2(9)
+ RELATED_ACCOUNT                                    VARCHAR2(20)
+ RELATED_REFERENCE                                  VARCHAR2(16)
+ MIS_FLAG                                           CHAR(1)
+ MIS_HEAD                                           VARCHAR2(9)
+ TRN_DT                                             DATE
+ VALUE_DT                                           DATE
+ TXN_INIT_DATE                                      DATE
+ FINANCIAL_CYCLE                                    VARCHAR2(9)
+ PERIOD_CODE                                        VARCHAR2(3)
+ INSTRUMENT_CODE                                    VARCHAR2(16)
+ BANK_CODE                                          VARCHAR2(12)
+ TYPE                                               CHAR(1)
+ CATEGORY                                           CHAR(1)
+ CUST_GL                                            CHAR(1)
+ MODULE                                             VARCHAR2(2)
+ AC_ENTRY_SR_NO                            NOT NULL NUMBER(20)
+ IB                                                 CHAR(1)
+ FLG_POSITION_STATUS                                CHAR(1)
+ GLMIS_UPDATE_FLAG                                  CHAR(1)
+ USER_ID                                            VARCHAR2(12)
+ CURR_NO                                            NUMBER(6)
+ BATCH_NO                                           VARCHAR2(4)
+ PRINT_STAT                                         CHAR(1)
+ PRODUCT_ACCRUAL                                    VARCHAR2(1)
+ AUTH_ID                                            VARCHAR2(12)
+ PRODUCT                                            VARCHAR2(4)
+ GLMIS_VAL_UPD_FLAG                                 CHAR(1)
+ EXTERNAL_REF_NO                                    VARCHAR2(35)
+ DONT_SHOWIN_STMT                                   CHAR(1)
+ IC_BAL_INCLUSION                                   CHAR(1)
+ AML_EXCEPTION                                      VARCHAR2(1)
+ ORIG_PNL_GL                                        VARCHAR2(9)
+ STMT_DT                                            DATE
+ ENTRY_SEQ_NO                                       NUMBER
+ TXN_DT_TIME                                        TIMESTAMP(6)
+
+
+
+
+SQL> desc fcc114.SWTB_TXN_LOG
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ P_KEY                                              VARCHAR2(255)
+ MSG_TYPE                                           VARCHAR2(4)
+ PAN                                                VARCHAR2(19)
+ PROC_CODE                                          VARCHAR2(6)
+ TXN_AMT                                            VARCHAR2(16)
+ SETL_AMT                                           VARCHAR2(16)
+ BILL_AMT                                           VARCHAR2(16)
+ TRANS_DT_TIME                                      VARCHAR2(10)
+ STAN                                               VARCHAR2(12)
+ ACQ_INS_ID                                         VARCHAR2(11)
+ FWD_INS_ID                                         VARCHAR2(11)
+ RRN                                                VARCHAR2(12)
+ RESP_CODE                                          VARCHAR2(4)
+ TERM_ID                                            VARCHAR2(16)
+ TXN_CCY_CODE                                       VARCHAR2(3)
+ SETL_CCY_CODE                                      VARCHAR2(3)
+ BILL_CCY_CODE                                      VARCHAR2(3)
+ FROM_ACC                                           VARCHAR2(28)
+ TO_ACC                                             VARCHAR2(28)
+ TXN_DESC                                           VARCHAR2(255)
+ EXP_DATE                                           VARCHAR2(4)
+ SETL_DATE                                          VARCHAR2(8)
+ CONV_DATE                                          VARCHAR2(4)
+ CAPT_DATE                                          VARCHAR2(4)
+ MSG_FLOW                                           VARCHAR2(2000)
+ WORK_PROGRESS                                      VARCHAR2(1)
+ ERR_PARAM                                          VARCHAR2(255)
+ TRN_REF_NO                                         VARCHAR2(16)
+ AMOUNT_BLOCK_NO                                    VARCHAR2(35)
+ PURGE_DATE                                         DATE
+ ERROR_CODE                                         VARCHAR2(11)
+ PRE_AUTH_SEQ_NO                                    VARCHAR2(16)
+ RECONSILED                                         VARCHAR2(1)
+ XREF                                      NOT NULL VARCHAR2(16)
+ DCN                                                VARCHAR2(16)
+ ADD_AMT                                            VARCHAR2(4000)
+ MINI_STMT_DATA                                     VARCHAR2(999)
+
+SQL>

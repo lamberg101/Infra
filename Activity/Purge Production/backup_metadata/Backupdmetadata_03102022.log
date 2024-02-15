@@ -1,0 +1,16 @@
+;;; 
+Export: Release 11.2.0.4.0 - Production on Tue Oct 4 16:34:54 2022
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+Starting "SYS"."SYS_EXPORT_TABLE_01":  "/******** AS SYSDBA" parfile=Backupdmetadata_03102022.par 
+Processing object type TABLE_EXPORT/TABLE/TABLE
+Processing object type TABLE_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Master table "SYS"."SYS_EXPORT_TABLE_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYS.SYS_EXPORT_TABLE_01 is:
+  /fcubs/backup/dumps/backup_metadata/Backupdmetadata_03102022_01.dmp
+Job "SYS"."SYS_EXPORT_TABLE_01" successfully completed at Tue Oct 4 16:35:36 2022 elapsed 0 00:00:33

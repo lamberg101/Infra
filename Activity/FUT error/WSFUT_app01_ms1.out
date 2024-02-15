@@ -1,0 +1,2665 @@
+<Mar 13, 2023 3:20:18 PM> <INFO> <NodeManager> <Server output log file is '/app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/logs/WSFUT_app01_ms1.out'>
+.
+.
+JAVA Memory arguments: -Xms256m -Xmx512m
+.
+WLS Start Mode=Production
+.
+CLASSPATH=/app/Oracle/Middleware/oracle_common/modules/oracle.jdbc_11.1.1/ojdbc6dms.jar:/app/Oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/app/Oracle/Middleware/patch_ocp371/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/usr/java7_64/lib/tools.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic_sp.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/app/Oracle/Middleware/modules/features/weblogic.server.modules_10.3.6.0.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/app/Oracle/Middleware/modules/org.apache.ant_1.7.1/lib/ant-all.jar:/app/Oracle/Middleware/modules/net.sf.antcontrib_1.1.0.0_1-0b2/lib/ant-contrib.jar:/app/Oracle/Middleware/oracle_common/soa/modules/commons-cli-1.1.jar:/app/Oracle/Middleware/oracle_common/soa/modules/oracle.soa.mgmt_11.1.1/soa-infra-mgmt.jar:/app/Oracle/Middleware/oracle_common/modules/oracle.jrf_11.1.1/jrf.jar:/app/Oracle/Middleware/wlserver_10.3/common/derby/lib/derbyclient.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/xqrl.jar:/app/Oracle/Middleware/patch_wls1036/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/app/Oracle/Middleware/patch_ocp371/profiles/default/sys_manifest_classpath/weblogic_patch.jar:/usr/java7_64/lib/tools.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic_sp.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.jar:/app/Oracle/Middleware/modules/features/weblogic.server.modules_10.3.6.0.jar:/app/Oracle/Middleware/wlserver_10.3/server/lib/webservices.jar:/app/Oracle/Middleware/modules/org.apache.ant_1.7.1/lib/ant-all.jar:/app/Oracle/Middleware/modules/net.sf.antcontrib_1.1.0.0_1-0b2/lib/ant-contrib.jar::/app/Oracle/Middleware
+.
+PATH=/app/Oracle/Middleware/wlserver_10.3/server/bin:/app/Oracle/Middleware/modules/org.apache.ant_1.7.1/bin:/usr/java7_64/jre/bin:/usr/java7_64/bin:/app/Oracle/Middleware/wlserver_10.3/server/bin:/app/Oracle/Middleware/modules/org.apache.ant_1.7.1/bin:/usr/java7_64/jre/bin:/usr/java7_64/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/usr/bin/X11:/sbin:/usr/java7_64/jre/bin:/usr/java7_64/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/oracle/bin:/usr/bin/X11:/sbin:.
+.
+***************************************************
+*  To start WebLogic Server, use a username and   *
+*  password assigned to an admin-level user.  For *
+*  server administration, use the WebLogic Server *
+*  console at http://hostname:port/console        *
+***************************************************
+starting weblogic with Java version:
+java version "1.7.0"
+Java(TM) SE Runtime Environment (build pap6470sr10fp65-20200402_01(SR10 FP65))
+IBM J9 VM (build 2.6, JRE 1.7.0 AIX ppc64-64 Compressed References 20200331_443031 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR10_20200331_0052_B443031
+JIT  - r11_20200331_443031
+GC   - R26_Java726_SR10_20200331_0052_B443031_CMPRSS
+J9CL - 20200331_443031)
+JCL - 20200326_01 based on Oracle jdk7u261-b07
+Starting WLS with line:
+/usr/java7_64/bin/java    -Xms256m -Xmx512m -Dweblogic.Name=WSFUT_app01_ms1 -Djava.security.policy=/app/Oracle/Middleware/wlserver_10.3/server/lib/weblogic.policy  -Dweblogic.ProductionModeEnabled=true -Dweblogic.system.BootIdentityFile=/app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/data/nodemanager/boot.properties -Dweblogic.nodemanager.ServiceEnabled=true -Dweblogic.security.SSL.ignoreHostnameVerification=false -Dweblogic.ReverseDNSAllowed=false  -da -Dplatform.home=/app/Oracle/Middleware/wlserver_10.3 -Dwls.home=/app/Oracle/Middleware/wlserver_10.3/server -Dweblogic.home=/app/Oracle/Middleware/wlserver_10.3/server  -Dcommon.components.home=/app/Oracle/Middleware/oracle_common -Djrf.version=11.1.1 -Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.Jdk14Logger -Ddomain.home=/app/Oracle/Middleware/user_projects/domains/mcbfut -Djrockit.optfile=/app/Oracle/Middleware/oracle_common/modules/oracle.jrf_11.1.1/jrocket_optfile.txt -Doracle.server.config.dir=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig/servers/WSFUT_app01_ms1 -Doracle.domain.config.dir=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig  -Digf.arisidbeans.carmlloc=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig/carml  -Digf.arisidstack.home=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig/arisidprovider -Doracle.security.jps.config=/app/Oracle/Middleware/user_projects/domains/mcbfut/config/fmwconfig/jps-config.xml -Doracle.deployed.app.dir=/app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/tmp/_WL_user -Doracle.deployed.app.ext=/- -Dweblogic.alternateTypesDirectory=/app/Oracle/Middleware/oracle_common/modules/oracle.ossoiap_11.1.1,/app/Oracle/Middleware/oracle_common/modules/oracle.oamprovider_11.1.1,/app/Oracle/Middleware/oracle_common/modules/oracle.jps_11.1.1 -Djava.protocol.handler.pkgs=oracle.mds.net.protocol  -Dweblogic.jdbc.remoteEnabled=false  -Dem.oracle.home=/app/Oracle/Middleware/oracle_common -Djava.awt.headless=true -Dweblogic.management.discover=false -Dweblogic.management.server=http://10.81.6.16:7001  -Dwlw.iterativeDev=false -Dwlw.testConsole=false -Dwlw.logErrorsToConsole=false -Dweblogic.ext.dirs=/app/Oracle/Middleware/patch_wls1036/profiles/default/sysext_manifest_classpath:/app/Oracle/Middleware/patch_ocp371/profiles/default/sysext_manifest_classpath  weblogic.Server
+<Mar 13, 2023 3:20:19 PM WIB> <Info> <Security> <BEA-090905> <Disabling CryptoJ JCE Provider self-integrity check for better startup performance. To enable this check, specify -Dweblogic.security.allowCryptoJDefaultJCEVerification=true> 
+<Mar 13, 2023 3:20:20 PM WIB> <Info> <Security> <BEA-090906> <Changing the default Random Number Generator in RSA CryptoJ from ECDRBG to FIPS186PRNG. To disable this change, specify -Dweblogic.security.allowCryptoJDefaultPRNG=true> 
+<Mar 13, 2023 3:20:20 PM WIB> <Info> <WebLogicServer> <BEA-000377> <Starting WebLogic Server with IBM J9 VM Version 2.6 from IBM Corporation> 
+<Mar 13, 2023 3:20:22 PM WIB> <Info> <Management> <BEA-141107> <Version: WebLogic Server Temporary Patch for BUG15869805 Mon Oct 07 10:17:45 IST 2013
+WebLogic Server 10.3.6.0  Tue Nov 15 08:52:36 PST 2011 1441050 > 
+<Mar 13, 2023 3:20:23 PM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+<Mar 13, 2023 3:20:23 PM WIB> <Info> <WorkManager> <BEA-002900> <Initializing self-tuning thread pool> 
+<Mar 13, 2023 3:20:23 PM WIB> <Notice> <Log Management> <BEA-170019> <The server log file /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/logs/WSFUT_app01_ms1.log is opened. All server side log events will be written to this file.> 
+<Mar 13, 2023 3:20:26 PM WIB> <Notice> <Security> <BEA-090082> <Security initializing using security realm myrealm.> 
+<Mar 13, 2023 3:20:28 PM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STANDBY> 
+<Mar 13, 2023 3:20:28 PM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to STARTING> 
+<Mar 13, 2023 3:20:34 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/stage/FCUBSCGService/FCUBSCGService.ear/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:34 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/tmp/_WL_user/FCUBSCGService/g23w6n/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:34 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/stage/FCUBSCIService/FCUBSCIService.ear/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:34 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/tmp/_WL_user/FCUBSCIService/2o8sbx/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:35 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/stage/FCUBSCcyService/FCUBSCcyService.ear/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:35 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/tmp/_WL_user/FCUBSCcyService/bij83m/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:36 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/stage/FCUBSDEService/FCUBSDEService.ear/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:36 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/tmp/_WL_user/FCUBSDEService/g50r2/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:36 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/stage/FCUBSIAService/FCUBSIAService.ear/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:36 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/tmp/_WL_user/FCUBSIAService/ix96yj/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:37 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/stage/FCUBSSTService/FCUBSSTService.ear/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:20:37 PM WIB> <Warning> <Munger> <BEA-2156203> <A version attribute was not found in element application in the deployment descriptor in /app/Oracle/Middleware/user_projects/domains/mcbfut/servers/WSFUT_app01_ms1/tmp/_WL_user/FCUBSSTService/ghg8oe/META-INF/application.xml. A version attribute is required, but this version of the Weblogic Server will assume that the JEE5 is used. Future versions of the Weblogic Server will reject descriptors that do not specify the JEE version.> 
+<Mar 13, 2023 3:21:06 PM WIB> <Notice> <Log Management> <BEA-170027> <The Server has established connection with the Domain level Diagnostic Service successfully.> 
+<Mar 13, 2023 3:21:06 PM WIB> <Notice> <Cluster> <BEA-000197> <Listening for announcements from cluster using unicast cluster messaging> 
+<Mar 13, 2023 3:21:06 PM WIB> <Notice> <Cluster> <BEA-000133> <Waiting to synchronize with other running members of WSFUTCLUSTER.> 
+<Mar 13, 2023 3:21:36 PM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to ADMIN> 
+<Mar 13, 2023 3:21:36 PM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RESUMING> 
+<Mar 13, 2023 3:21:36 PM WIB> <Notice> <Cluster> <BEA-000162> <Starting "async" replication service with remote cluster address "null"> 
+<Mar 13, 2023 3:21:36 PM WIB> <Notice> <Server> <BEA-002613> <Channel "Default" is now listening on 10.81.6.16:8011 for protocols iiop, t3, CLUSTER-BROADCAST, ldap, snmp, http.> 
+<Mar 13, 2023 3:21:36 PM WIB> <Notice> <WebLogicServer> <BEA-000330> <Started WebLogic Managed Server "WSFUT_app01_ms1" for domain "mcbfut" running in Production Mode> 
+<Mar 13, 2023 3:21:36 PM WIB> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING> 
+<Mar 13, 2023 3:21:36 PM WIB> <Notice> <WebLogicServer> <BEA-000360> <Server started in RUNNING mode> 
+Node value is:A
+Node value is:A
+Mar 13, 2023 3:37:14 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "soap"
+ at javax.xml.stream.SerializableLocation@70a7e0d0
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "soap"
+ at javax.xml.stream.SerializableLocation@70a7e0d0
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "soap"
+ at javax.xml.stream.SerializableLocation@70a7e0d0
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:252)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "soap"
+ at javax.xml.stream.SerializableLocation@70a7e0d0
+	at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:580)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:453)
+	at com.ctc.wstx.sr.NsInputElementStack.resolveAndValidateElement(NsInputElementStack.java:345)
+	at com.ctc.wstx.sr.BasicStreamReader.handleStartElem(BasicStreamReader.java:2926)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromTree(BasicStreamReader.java:2786)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1054)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+<Mar 13, 2023 4:10:19 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.241.222:56,810 during the configured idle timeout of 5 secs> 
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Mar 14, 2023 11:24:37 AM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Body but found: {http://fcubs.ofss.com/service/FCUBSRTService}AUTHORIZETRANSACTION_FSFS_REQ
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Body but found: {http://fcubs.ofss.com/service/FCUBSRTService}AUTHORIZETRANSACTION_FSFS_REQ
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Body but found: {http://fcubs.ofss.com/service/FCUBSRTService}AUTHORIZETRANSACTION_FSFS_REQ
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.verifyTag(XMLStreamReaderUtil.java:214)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:249)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+
+Mar 14, 2023 11:26:06 AM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "ns2"
+ at javax.xml.stream.SerializableLocation@1cc49f8b
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "ns2"
+ at javax.xml.stream.SerializableLocation@1cc49f8b
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "ns2"
+ at javax.xml.stream.SerializableLocation@1cc49f8b
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:252)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "ns2"
+ at javax.xml.stream.SerializableLocation@1cc49f8b
+	at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:580)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:453)
+	at com.ctc.wstx.sr.NsInputElementStack.resolveAndValidateElement(NsInputElementStack.java:345)
+	at com.ctc.wstx.sr.BasicStreamReader.handleStartElem(BasicStreamReader.java:2926)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromTree(BasicStreamReader.java:2786)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1054)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Mar 14, 2023 1:28:41 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "fcub"
+ at javax.xml.stream.SerializableLocation@64338f80
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "fcub"
+ at javax.xml.stream.SerializableLocation@64338f80
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "fcub"
+ at javax.xml.stream.SerializableLocation@64338f80
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:252)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "fcub"
+ at javax.xml.stream.SerializableLocation@64338f80
+	at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:580)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:453)
+	at com.ctc.wstx.sr.NsInputElementStack.resolveAndValidateElement(NsInputElementStack.java:345)
+	at com.ctc.wstx.sr.BasicStreamReader.handleStartElem(BasicStreamReader.java:2926)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromTree(BasicStreamReader.java:2786)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1054)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 14, 2023 1:29:33 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "fns2"
+ at javax.xml.stream.SerializableLocation@812e719
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "fns2"
+ at javax.xml.stream.SerializableLocation@812e719
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "fns2"
+ at javax.xml.stream.SerializableLocation@812e719
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:252)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxParsingException: Undeclared namespace prefix "fns2"
+ at javax.xml.stream.SerializableLocation@812e719
+	at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:580)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:453)
+	at com.ctc.wstx.sr.NsInputElementStack.resolveAndValidateElement(NsInputElementStack.java:345)
+	at com.ctc.wstx.sr.BasicStreamReader.handleStartElem(BasicStreamReader.java:2926)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromTree(BasicStreamReader.java:2786)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1054)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Mar 14, 2023 9:53:27 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+Node value is:A
+Mar 14, 2023 9:55:20 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+Node value is:A
+<Mar 20, 2023 1:41:54 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.42.105:63,846 during the configured idle timeout of 5 secs> 
+Node value is:A
+Node value is:A
+JAXBException: null
+javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:347)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:522)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:223)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:169)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:216)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCustomerServiceImpl.createCustomerIndFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:133)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:173)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:217)
+	... 44 more
+Node value is:A
+Node value is:A
+JAXBException: null
+javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:347)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:522)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:223)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:169)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:216)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCustomerServiceImpl.createCustomerIndFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:133)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:173)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:217)
+	... 44 more
+Node value is:A
+Node value is:A
+JAXBException: null
+javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:347)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:522)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:223)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:169)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:216)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCustomerServiceImpl.createCustomerIndFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:133)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:173)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:217)
+	... 44 more
+Node value is:A
+Node value is:A
+JAXBException: null
+javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:347)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:522)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:223)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:169)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:216)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCustomerServiceImpl.createCustomerIndFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:133)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:173)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:217)
+	... 44 more
+Node value is:A
+Node value is:A
+JAXBException: null
+javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:347)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:522)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:223)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:169)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:216)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCustomerServiceImpl.createCustomerIndFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:133)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:173)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:217)
+	... 44 more
+<Mar 24, 2023 9:59:04 AM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.42.105:63,500 during the configured idle timeout of 5 secs> 
+Node value is:A
+Node value is:A
+JAXBException: null
+javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:347)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:522)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:223)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:169)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:216)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCustomerServiceImpl.createCustomerIndFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:133)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:173)
+	at com.sun.xml.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:217)
+	... 44 more
+<Mar 24, 2023 1:52:39 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.42.105:62,202 during the configured idle timeout of 5 secs> 
+<Mar 24, 2023 1:52:39 PM WIB> <Warning> <Socket> <BEA-000449> <Closing socket as no data read from it on 10.80.42.105:62,203 during the configured idle timeout of 5 secs> 
+Mar 29, 2023 7:35:33 AM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Envelope but found: {http://fcubs.ofss.com/service/FCUBSIAService}MODIFYIATDCUSTACC_FSFS_REQ
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Envelope but found: {http://fcubs.ofss.com/service/FCUBSIAService}MODIFYIATDCUSTACC_FSFS_REQ
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Envelope but found: {http://fcubs.ofss.com/service/FCUBSIAService}MODIFYIATDCUSTACC_FSFS_REQ
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.verifyTag(XMLStreamReaderUtil.java:214)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:202)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+
+Mar 29, 2023 7:36:10 AM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Envelope but found: {}FCUBS_HEADER
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Envelope but found: {}FCUBS_HEADER
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: unexpected XML tag. expected: {http://schemas.xmlsoap.org/soap/envelope/}Envelope but found: {}FCUBS_HEADER
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.verifyTag(XMLStreamReaderUtil.java:214)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:202)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+
+Mar 29, 2023 2:29:17 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Mar 29, 2023 2:29:17 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@7b3b6851
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@7b3b6851
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@7b3b6851
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:197)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@7b3b6851
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:650)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2096)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 29, 2023 2:29:37 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Mar 29, 2023 2:29:37 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@7e680b19
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@7e680b19
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@7e680b19
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:197)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@7e680b19
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:650)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2096)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 29, 2023 2:33:55 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Mar 29, 2023 2:33:55 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@caa0d5e1
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@caa0d5e1
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@caa0d5e1
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:197)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@caa0d5e1
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:650)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2096)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 29, 2023 2:34:00 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Mar 29, 2023 2:34:00 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@9ebaad75
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@9ebaad75
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@9ebaad75
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:197)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@9ebaad75
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:650)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2096)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 29, 2023 2:35:47 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Mar 29, 2023 2:35:47 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@160013e5
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@160013e5
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@160013e5
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:197)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@160013e5
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:650)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2096)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 29, 2023 2:35:51 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Mar 29, 2023 2:35:51 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@d12f5afc
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@d12f5afc
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@d12f5afc
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:197)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@d12f5afc
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:650)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2096)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 29, 2023 3:29:32 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Mar 29, 2023 3:29:32 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@e4ea2ed9
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@e4ea2ed9
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@e4ea2ed9
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:197)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@e4ea2ed9
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:650)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2096)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 29, 2023 3:29:38 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Mar 29, 2023 3:29:38 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@5a6eb2b4
+com.sun.xml.ws.protocol.soap.MessageCreationException: Couldn't create SOAP message due to exception: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@5a6eb2b4
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:295)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:294)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:102)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:519)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@5a6eb2b4
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:197)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:334)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:151)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:290)
+	... 28 more
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at javax.xml.stream.SerializableLocation@5a6eb2b4
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:650)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2096)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 34 more
+
+Mar 29, 2023 3:59:09 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+Node value is:A
+Mar 29, 2023 3:59:13 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+Node value is:A
+Mar 29, 2023 4:00:33 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+Node value is:A
+Mar 29, 2023 4:00:36 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+Node value is:A
+Mar 29, 2023 4:43:05 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+Node value is:A
+Mar 29, 2023 4:45:34 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+Node value is:A
+<Mar 30, 2023 9:50:35 AM WIB> <Error> <JDBC> <BEA-001112> <Test "SELECT 1 FROM DUAL" set up for pool "FLEXTEST.WORLD" failed with exception: "java.sql.SQLRecoverableException: No more data to read from socket".> 
+<Mar 30, 2023 9:50:35 AM WIB> <Warning> <JDBC> <BEA-001129> <Received exception while creating connection for pool "FLEXTEST.WORLD": Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ .> 
+<Mar 30, 2023 9:50:35 AM WIB> <Warning> <JDBC> <BEA-001129> <Received exception while creating connection for pool "FLEXTEST.WORLD": Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ .> 
+Mar 30, 2023 10:39:30 AM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+
+GWEJBBean [processMsg(String, String)] 30_MAR 10:39:30:617->EXCEPTION
+weblogic.jdbc.extensions.PoolDisabledSQLException: weblogic.common.resourcepool.ResourceDisabledException: Pool FLEXTEST.WORLD is Suspended, cannot allocate resources to applications..
+	at weblogic.jdbc.common.internal.JDBCUtil.wrapAndThrowResourceException(JDBCUtil.java:251)
+	at weblogic.jdbc.jts.Driver.newConnection(Driver.java:938)
+	at weblogic.jdbc.jts.Driver.createLocalConnection(Driver.java:336)
+	at weblogic.jdbc.jts.Driver.connect(Driver.java:173)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnectionInternal(RmiDataSource.java:533)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:498)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:491)
+	at com.iflex.fcubs.gwutil.db.GWDBUtil.getConnection(GWDBUtil.java:119)
+	at com.iflex.fcubs.gwservices.db.GWMsgProcessor.getConnection(GWMsgProcessor.java:95)
+	at com.iflex.fcubs.gwservices.db.inbound.GWMsgSchemaProc.getSystemAuthReq(GWMsgSchemaProc.java:1093)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMessage(GWEJBBean.java:584)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMsg(GWEJBBean.java:420)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.processMsg(Unknown Source)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.ServerRequest.sendReceive(ServerRequest.java:174)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:345)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_1036_WLStub.processMsg(Unknown Source)
+	at com.iflex.fcubs.gwservices.ejb.GWEJBClient.callRemoteEJB(GWEJBClient.java:172)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+
+FCUBSCIServiceImpl [createAccountFS(CREATEACCOUNTFSFSREQ requestMsg)] 30_MAR 10:39:30:624->EXCEPTION
+java.lang.NullPointerException
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+Mar 30, 2023 2:05:16 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+
+GWEJBBean [processMsg(String, String)] 30_MAR 14:05:16:909->EXCEPTION
+weblogic.jdbc.extensions.PoolDisabledSQLException: weblogic.common.resourcepool.ResourceDisabledException: Pool FLEXTEST.WORLD is Suspended, cannot allocate resources to applications..
+	at weblogic.jdbc.common.internal.JDBCUtil.wrapAndThrowResourceException(JDBCUtil.java:251)
+	at weblogic.jdbc.jts.Driver.newConnection(Driver.java:938)
+	at weblogic.jdbc.jts.Driver.createLocalConnection(Driver.java:336)
+	at weblogic.jdbc.jts.Driver.connect(Driver.java:173)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnectionInternal(RmiDataSource.java:533)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:498)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:491)
+	at com.iflex.fcubs.gwutil.db.GWDBUtil.getConnection(GWDBUtil.java:119)
+	at com.iflex.fcubs.gwservices.db.GWMsgProcessor.getConnection(GWMsgProcessor.java:95)
+	at com.iflex.fcubs.gwservices.db.inbound.GWMsgSchemaProc.getSystemAuthReq(GWMsgSchemaProc.java:1093)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMessage(GWEJBBean.java:584)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMsg(GWEJBBean.java:420)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.processMsg(Unknown Source)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.ServerRequest.sendReceive(ServerRequest.java:174)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:345)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_1036_WLStub.processMsg(Unknown Source)
+	at com.iflex.fcubs.gwservices.ejb.GWEJBClient.callRemoteEJB(GWEJBClient.java:172)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+
+FCUBSCIServiceImpl [createAccountFS(CREATEACCOUNTFSFSREQ requestMsg)] 30_MAR 14:05:16:913->EXCEPTION
+java.lang.NullPointerException
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+Mar 30, 2023 2:08:38 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+
+GWEJBBean [processMsg(String, String)] 30_MAR 14:08:38:856->EXCEPTION
+weblogic.jdbc.extensions.PoolDisabledSQLException: weblogic.common.resourcepool.ResourceDisabledException: Pool FLEXTEST.WORLD is Suspended, cannot allocate resources to applications..
+	at weblogic.jdbc.common.internal.JDBCUtil.wrapAndThrowResourceException(JDBCUtil.java:251)
+	at weblogic.jdbc.jts.Driver.newConnection(Driver.java:938)
+	at weblogic.jdbc.jts.Driver.createLocalConnection(Driver.java:336)
+	at weblogic.jdbc.jts.Driver.connect(Driver.java:173)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnectionInternal(RmiDataSource.java:533)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:498)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:491)
+	at com.iflex.fcubs.gwutil.db.GWDBUtil.getConnection(GWDBUtil.java:119)
+	at com.iflex.fcubs.gwservices.db.GWMsgProcessor.getConnection(GWMsgProcessor.java:95)
+	at com.iflex.fcubs.gwservices.db.inbound.GWMsgSchemaProc.getSystemAuthReq(GWMsgSchemaProc.java:1093)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMessage(GWEJBBean.java:584)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMsg(GWEJBBean.java:420)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.processMsg(Unknown Source)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.ServerRequest.sendReceive(ServerRequest.java:174)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:345)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_1036_WLStub.processMsg(Unknown Source)
+	at com.iflex.fcubs.gwservices.ejb.GWEJBClient.callRemoteEJB(GWEJBClient.java:172)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+
+FCUBSCIServiceImpl [createAccountFS(CREATEACCOUNTFSFSREQ requestMsg)] 30_MAR 14:08:38:868->EXCEPTION
+java.lang.NullPointerException
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+Mar 30, 2023 2:09:02 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+
+GWEJBBean [processMsg(String, String)] 30_MAR 14:09:02:657->EXCEPTION
+weblogic.jdbc.extensions.PoolDisabledSQLException: weblogic.common.resourcepool.ResourceDisabledException: Pool FLEXTEST.WORLD is Suspended, cannot allocate resources to applications..
+	at weblogic.jdbc.common.internal.JDBCUtil.wrapAndThrowResourceException(JDBCUtil.java:251)
+	at weblogic.jdbc.jts.Driver.newConnection(Driver.java:938)
+	at weblogic.jdbc.jts.Driver.createLocalConnection(Driver.java:336)
+	at weblogic.jdbc.jts.Driver.connect(Driver.java:173)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnectionInternal(RmiDataSource.java:533)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:498)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:491)
+	at com.iflex.fcubs.gwutil.db.GWDBUtil.getConnection(GWDBUtil.java:119)
+	at com.iflex.fcubs.gwservices.db.GWMsgProcessor.getConnection(GWMsgProcessor.java:95)
+	at com.iflex.fcubs.gwservices.db.inbound.GWMsgSchemaProc.getSystemAuthReq(GWMsgSchemaProc.java:1093)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMessage(GWEJBBean.java:584)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMsg(GWEJBBean.java:420)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.processMsg(Unknown Source)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.ServerRequest.sendReceive(ServerRequest.java:174)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:345)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_1036_WLStub.processMsg(Unknown Source)
+	at com.iflex.fcubs.gwservices.ejb.GWEJBClient.callRemoteEJB(GWEJBClient.java:172)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+
+FCUBSCIServiceImpl [createAccountFS(CREATEACCOUNTFSFSREQ requestMsg)] 30_MAR 14:09:02:661->EXCEPTION
+java.lang.NullPointerException
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+Mar 30, 2023 2:12:02 PM com.sun.xml.ws.transport.http.HttpAdapter fixQuotesAroundSoapAction
+INFO: Received WS-I BP non-conformant Unquoted SoapAction HTTP header: 
+Node value is:A
+
+GWEJBBean [processMsg(String, String)] 30_MAR 14:12:02:052->EXCEPTION
+weblogic.jdbc.extensions.PoolDisabledSQLException: weblogic.common.resourcepool.ResourceDisabledException: Pool FLEXTEST.WORLD is Suspended, cannot allocate resources to applications..
+	at weblogic.jdbc.common.internal.JDBCUtil.wrapAndThrowResourceException(JDBCUtil.java:251)
+	at weblogic.jdbc.jts.Driver.newConnection(Driver.java:938)
+	at weblogic.jdbc.jts.Driver.createLocalConnection(Driver.java:336)
+	at weblogic.jdbc.jts.Driver.connect(Driver.java:173)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnectionInternal(RmiDataSource.java:533)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:498)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:491)
+	at com.iflex.fcubs.gwutil.db.GWDBUtil.getConnection(GWDBUtil.java:119)
+	at com.iflex.fcubs.gwservices.db.GWMsgProcessor.getConnection(GWMsgProcessor.java:95)
+	at com.iflex.fcubs.gwservices.db.inbound.GWMsgSchemaProc.getSystemAuthReq(GWMsgSchemaProc.java:1093)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMessage(GWEJBBean.java:584)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMsg(GWEJBBean.java:420)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.processMsg(Unknown Source)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.ServerRequest.sendReceive(ServerRequest.java:174)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:345)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_1036_WLStub.processMsg(Unknown Source)
+	at com.iflex.fcubs.gwservices.ejb.GWEJBClient.callRemoteEJB(GWEJBClient.java:172)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+
+FCUBSCIServiceImpl [createAccountFS(CREATEACCOUNTFSFSREQ requestMsg)] 30_MAR 14:12:02:056->EXCEPTION
+java.lang.NullPointerException
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSCIServiceImpl.createAccountFS(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+Node value is:A
+
+GWEJBBean [processMsg(String, String)] 31_MAR 10:55:54:942->EXCEPTION
+weblogic.jdbc.extensions.PoolDisabledSQLException: weblogic.common.resourcepool.ResourceDisabledException: Pool FLEXTEST.WORLD is Suspended, cannot allocate resources to applications..
+	at weblogic.jdbc.common.internal.JDBCUtil.wrapAndThrowResourceException(JDBCUtil.java:251)
+	at weblogic.jdbc.jts.Driver.newConnection(Driver.java:938)
+	at weblogic.jdbc.jts.Driver.createLocalConnection(Driver.java:336)
+	at weblogic.jdbc.jts.Driver.connect(Driver.java:173)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnectionInternal(RmiDataSource.java:533)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:498)
+	at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:491)
+	at com.iflex.fcubs.gwutil.db.GWDBUtil.getConnection(GWDBUtil.java:119)
+	at com.iflex.fcubs.gwservices.db.GWMsgProcessor.getConnection(GWMsgProcessor.java:95)
+	at com.iflex.fcubs.gwservices.db.inbound.GWMsgSchemaProc.getSystemAuthReq(GWMsgSchemaProc.java:1093)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMessage(GWEJBBean.java:584)
+	at com.iflex.fcubs.gw.ejb.GWEJBBean.processMsg(GWEJBBean.java:420)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionRemoteMethodInvoker.invoke(SessionRemoteMethodInvoker.java:40)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl.processMsg(Unknown Source)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.ServerRequest.sendReceive(ServerRequest.java:174)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:345)
+	at weblogic.rmi.cluster.ClusterableRemoteRef.invoke(ClusterableRemoteRef.java:259)
+	at com.iflex.fcubs.gw.ejb.GWEJB_GW_EJB_Bean_jg7dym_EOImpl_1036_WLStub.processMsg(Unknown Source)
+	at com.iflex.fcubs.gwservices.ejb.GWEJBClient.callRemoteEJB(GWEJBClient.java:172)
+	at com.ofss.fcubs.gw.ws.types.FCUBSDEServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSDEServiceImpl.createMjrnlbookFS(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor186.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+
+FCUBSDEServiceImpl [createMjrnlbookFS(CREATEMJRNLBOOKFSFSREQ requestMsg)] 31_MAR 10:55:54:946->EXCEPTION
+java.lang.NullPointerException
+	at com.ofss.fcubs.gw.ws.types.FCUBSDEServiceImpl.callEJB(Unknown Source)
+	at com.ofss.fcubs.gw.ws.types.FCUBSDEServiceImpl.createMjrnlbookFS(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor186.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:92)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:74)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:151)
+	at com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl.invoke(EndpointMethodHandlerImpl.java:268)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:100)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:866)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:815)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:778)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:680)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:403)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:539)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:253)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:140)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:171)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:708)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:146)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:103)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:311)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:336)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:99)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:184)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3732)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+

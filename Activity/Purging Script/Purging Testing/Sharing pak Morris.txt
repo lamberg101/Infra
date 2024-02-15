@@ -1,0 +1,5 @@
+UDF : user definded field 
+--> field tambahan diluar flexcube, di bikin tambahan
+--> biasanya di setiap screen ada tombol field
+--> cara mendambahkannya ada di module UDF
+
